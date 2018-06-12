@@ -26,8 +26,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-bottom: 10px;
-  line-height: 30px; }
+  margin-bottom: 10px; }
   .cases .right-case {
     width: 45%;
     height: 300px;
@@ -37,20 +36,24 @@
     .cases .right-case .rectangle {
       background: lightgreen;
       height: 32.6%;
-      border: 1px solid #000; }
+      border: 1px solid #000;
+      line-height: 30px; }
     .cases .right-case .rectangle2 {
-      background: #99D1D3;
+      background: #A095C4;
       height: 32.6%;
       border: 1px solid #000;
-      width: 70%; }
+      width: 70%;
+      line-height: 30px; }
     .cases .right-case .rectangle3 {
-      background: #8273B0;
+      background: #FFFBD1;
       height: 32.6%;
       border: 1px solid #000;
-      width: 30%; }
+      width: 30%;
+      line-height: 20px; }
     .cases .right-case .rectangle-parent {
-      background: red;
-      margin-bottom: 10px; }
+      background: #007F54;
+      margin-bottom: 10px;
+      line-height: 30px; }
     .cases .right-case .rectangle4 {
       height: 100px;
       background: lightgreen;
@@ -84,7 +87,7 @@
   margin: auto; }
   .blo-in .inline-block {
     display: inline-block;
-    background: red;
+    background: #D2A6C7;
     width: 100px;
     height: 100px;
     margin: 10px;
@@ -92,5 +95,6 @@
     line-height: 100px;
     color: #fff; }
   .blo-in #dif {
-    margin-top: 20px;
-    background: blue; }
+    margin-top: 50px;
+    background: #D7D7D7;
+    line-height: 30px; }

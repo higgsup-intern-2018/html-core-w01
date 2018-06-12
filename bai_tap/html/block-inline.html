@@ -17,18 +17,18 @@
 		<div class="cases">
 			<div class="right-case">
 				<div class="rectangle">Mặc định width 100% so với phần tử cha</div>
-				<div class="rectangle3"></div>
-				<div class="rectangle2">dù xét width nhưng vẫn chiếm trọn vùng không gian</div>
+				<div class="rectangle3">dù xét width nhỏ hơn 100% nhưng vẫn chiếm trọn vùng không gian</div>
+				<div class="rectangle2">dù xét width nhỏ hơn 100% nhưng vẫn chiếm trọn vùng không gian</div>
 			</div>
 			<div class="wrong-case">
 				<a href="#">Thẻ a</a>
 				<span>Thẻ span</span>
 				<strong>Thẻ strong</strong>
 				<em>Thẻ em</em>
-				<hr>
-				<span>==> Hiển thị trên cùng 1 hàng</span><br>
-				<span>==> Chỉ có vùng hiển thị chứ không có vùng không gian</span><br>
-				<em>==> Có thể</em><span id="ver">sử dụng được verticle-align</span><span id="ver2">như text</span>
+				<hr><br><br>
+				<span>==> Hiển thị trên cùng 1 hàng</span><br><br>
+				<span>==> Chỉ có vùng hiển thị chứ không có vùng không gian</span><br><br>
+				<em>==> Có thể</em><span id="ver">sử dụng được verticle-align</span><span id="ver2">như text</span><br><br>
 				<span id="whi">
 				==> áp dụng cả thuộc tính
 					white
@@ -47,18 +47,19 @@
 					</div>
 			</div>
 			<div class="wrong-case">
+				<br><br>
 				<a href="#">Không thể</a>
 				<span>áp dụng</span>
 				<strong>được</strong>
 				<em>thuộc tính</em>
 				<i>Margin top và Margin bottom</i>
-				<hr>
+				<hr><br><br>
 				<a href="#">Không thể</a>
 				<span>áp dụng</span>
 				<strong>được</strong>
 				<em>thuộc tính</em>
 				<i>Width và Height</i>
-				<hr>
+				<hr><br><br>
 				<em>Sử dụng float: right ==></em>
 				<a id="float" href="#">Nếu sử dụng thuộc tính float,inline sẽ tự động trở thành block</a>
 				
@@ -72,9 +73,10 @@
 					Inlineblock
 				</div>
 				<div id="dif" class="inline-block">
-					Inlineblock
+					<p>Inlineblock</p>
 				</div><br>
-				<h1>==> áp dụng được cả margin và padding</h1>
+				<p>==> áp dụng được cả margin và padding như block-level.</p>
+				<p>==> sử dụng white-space và vertical-align như text.</p>
 			</div>
 
 	</div>
