@@ -1,0 +1,35 @@
+.banner > a > img {
+    width: 800px;
+    height: 300px;
+}
+div.blockLevel1 {
+    border: 3px solid black;
+    margin: 10px 20px;
+}
+div.blockLevel1 p {
+padding: 5px;
+}
+div.blockLevel2 {
+    border: 3px solid red;
+    margin: 30px 100px;
+}
+div span{
+    border: 3px solid black;
+    width: 500px;
+    height: 300px;
+    margin: 600px 600px;
+}
+div.meNu{
+    border: 5px solid greenyellow;
+    height: 40px;
+}
+div.meNu ul li{
+    float: left;
+    list-style: none;
+    padding: 5px 10px;
+}
+div.meNu ul li > a{
+    text-decoration: none;
+}
+
+
