@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../css/block-inline.css">
+	<title>...</title>
+</head>
+<body>
+	<div class="container">
+		<div class="caption">
+			<h1>Block</h1>
+			<h1>Inline</h1>
+		</div>
+		<div class="cases">
+			<div class="right-case">
+				<div class="rectangle">Mặc định width 100% so với phần tử cha</div>
+				<div class="rectangle3"></div>
+				<div class="rectangle2">dù xét width nhưng vẫn chiếm trọn vùng không gian</div>
+			</div>
+			<div class="wrong-case">
+				<a href="#">Thẻ a</a>
+				<span>Thẻ span</span>
+				<strong>Thẻ strong</strong>
+				<em>Thẻ em</em>
+				<hr>
+				<span>==> Hiển thị trên cùng 1 hàng</span><br>
+				<span>==> Chỉ có vùng hiển thị chứ không có vùng không gian</span><br>
+				<em>==> Có thể</em><span id="ver">sử dụng được verticle-align</span><span id="ver2">như text</span>
+				<span id="whi">
+				==> áp dụng cả thuộc tính
+					white
+				space</span>
+			</div>
+		</div>
+		<div class="cases">
+			<div class="right-case">
+				<div class="rectangle-parent">
+					<div class="rectangle4">
+						==> Nếu không xác định chiều cao, block sẽ tự động giới hạn bằng chiều cao phần tử con
+					</div>
+				</div>
+					<div class="rectangle2" style="margin: auto">
+						==> không thể sử dụng verticle-align
+					</div>
+			</div>
+			<div class="wrong-case">
+				<a href="#">Không thể</a>
+				<span>áp dụng</span>
+				<strong>được</strong>
+				<em>thuộc tính</em>
+				<i>Margin top và Margin bottom</i>
+				<hr>
+				<a href="#">Không thể</a>
+				<span>áp dụng</span>
+				<strong>được</strong>
+				<em>thuộc tính</em>
+				<i>Width và Height</i>
+				<hr>
+				<em>Sử dụng float: right ==></em>
+				<a id="float" href="#">Nếu sử dụng thuộc tính float,inline sẽ tự động trở thành block</a>
+				
+			</div>
+		</div>
+			<div class="blo-in">
+				
+			</div>
+
+	</div>
+</body>
+</html>
