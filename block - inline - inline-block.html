@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>block inline</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <style>
+
+        .f-left {
+            float: left;
+        }
+
+        span{
+            background:yellow;
+
+        }
+        .main{
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="container" style="background: #e4e4e4">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h2>các phần tử block level</h2>
+            <p style="border: 1px solid red; margin: 5px;">block element có thể sử dung và margin</p>
+            <hr>
+            <p style="border:1px solid red">block element có width = 100%</p>
+        </div>
+        <div class="col-md-6">
+            <h2>các phần tử inline nội tuyến</h2>
+            <span style="border: 1px solid red; margin: 5px;">inline element không dùng được margin top bottom</span>
+            <hr>
+            <span style="border:1px solid red ;width:200px;height:200px;">không thể set width, height kích thước của phần tử phụ thuộc vào chính nó</span>
+            <div class="main">
+                <span class="list1">phần tử inline</span>
+                <span class="list2">phần tử inline</span>
+                <h2>click vào bottom các phần tử inline có thuộc tính float và chuyển thành định dạng block</h2>
+                <button onclick="clickme()">click</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    function clickme() {
+        document.getElementsByClassName("list1")[0].setAttribute("class", "f-left");
+        document.getElementsByClassName("list2")[0].setAttribute("class", "f-left");
+    }
+</script>
+</body>
+</html>
