@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>Bài Tập</title>
+</head>
+<body>
+	<div class="container">
+		<div class="caption">
+			<h1>Relative</h1>
+			<h1>Absolute</h1>
+		</div>
+		<div class="cases">
+			<div class="left-case">
+				<div class="rectangle">
+					Relative<br>
+					Top: 40px<br>
+					Left: 30%
+				</div><br><br><br><br>
+				<p>=>> Xác định vị trí tương đối của phần tử với chính mốc vùng hiển thị của nó.</p><br><hr><br>
+				<p>=>> ta có thể di chuyển nó ở bất kì vị trí nào thông qua 4 mốc top,right,bottom,left.</p>
+			</div>
+			<div class="right-case">
+				<div>
+					<div class="rectangle">
+						<em>parent</em>
+						<div class="sm-rectangle">child</div>
+						<div class="sm-rectangle2">child</div>
+					</div><br><br><br><br>
+					<p>=>> xác định vị trí tuyệt đối của phần tử với phần tử cha của nó.</p><br><hr><br>
+					<p>=>> cũng giống như relative ta có thể di chuyển nó ở bất kì vị trí nào thông qua 4 mốc top,right,bottom,left.
+
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="cases">
+			<div style="visibility: hidden" class="left-case">
+				
+			</div>
+			<div class="right-case">
+				<div class="rectangle">
+					<div style="background: yellow" class="sm-rectangle"></div>
+					<div style="background: purple" class="sm-rectangle2"></div>
+				</div><br><br><br><br>
+				<p>=>> khi xét absolute thì phần tử sẽ mất đi vùng không gian của nó.</p><br><hr><br>
+				<p>=>> nếu không xác định các thuộc tính top,right,bottom,left thì phần tử sẽ mặc định có giá trị là top:0 và left:0.</p>
+			</div>
+		</div>
+		<hr>
+		<h1>Box sizing</h1>
+		<div class="rectangle2">
+			<p>=>> giữ nguyên kích thước ban đầu( width và height) cho phần tử dù có cộng thêm padding, border.</p><br><br><br>
+			<p>=>> content bên trong phần tử sẽ tự thu lại để nhường cho padding và border.</p>
+		</div>
+		<br><hr>
+		<h1>Clearfix</h1>
+		<div style="border-style: solid; width: 500px;padding: 0;background: #fff" class="rectangle2">
+			<div class="div-child">1</div>
+			<div class="div-child div-se">3</div>
+			<div class="div-child div-clear">div bị đè</div><br>
+			<p>=>> trình duyệt không thể tính được chiều cao của div cha chứa các div mang thuộc tính float, nên các element nằm sau div cha này sẽ bị các div con đó đè lên.</p>
+		</div>
+		<div style="border-style: solid; width: 500px;padding: 0;background: #fff" class="rectangle2">
+			<div class="div-child">1</div>
+			<div class="div-child div-se">3</div>
+			<p>=>> sau khi dùng clear both và sử dụng margin thì div không di chuyển, vì div sẽ lấy khoảng cách margin từ khoảng trắng này</p>
+			<div class="clear div-clear">div bị đè</div><br>
+		</div>
+		<div style="border-style: solid; width: 500px;height: 300px;padding: 0;background: #fff" class="rectangle2" id="rec-clear">
+			<div class="div-child">1</div>
+			<div class="div-child div-se">3</div>
+			<div style="margin-top: 130px" class="clear div-clear">div bị đè</div><br>
+			<p>=>> sau khi dùng clearfix bằng cách thêm 1 block after div cha dùng clear both và ẩn đi, thì div hiện tại đã được đẩy xuống</p>
+		</div>
+	</div>
+</body>
+</html>
