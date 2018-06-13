@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="vi" lang="vi">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>position absolute</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen,print"/>
+</head>
+
+<body>
+<main>
+    <div class="testExemple">
+        <p class="tagA absolute">Thành phần A.</p>
+        <p class="tagB">Thành phần B.</p>
+    </div>
+    <p>với absolute khi sử dụng thuộc tính này vùng không gian sẽ mất (relative vùng không gian vẫn còn)</p>
+    <p>vì vậy nên thành phần B sẽ nằm dưới (chính xác hơn là chiếm lấy vị trí cũ của thành phần A) thành phần A vì thành
+        phần A đã được giải phóng hoàn toàn khỏi vùng không gian</p><br><br>
+    <p class="th1">- Trường hợp 1. Nếu không có các thuộc tính xác định vị trí (top, left, right,bottom) thì nó sẽ lấy thành phần gốc
+        dựa trên giá trị mặc định left:0; top:0;</p>
+    <div class="testExemple">
+        <p class="tagA absolute">Thành phần A.</p>
+        <p class="tagB">Thành phần B.</p>
+    </div>
+    <p class="th2"> - Trường hợp 2. Nếu có sử dụng thành phần định vị vị trí (chưa có relative bao ngoài) thì sẽ lấy theo vị trí gốc của
+        vùng không gian trình duyệt</p>
+    <div class="testExemple">
+        <p class="tagA absolute l-20 t-40">Thành phần A.(trường hợp 2)</p>
+        <p class="tagB">Thành phần B.</p>
+    </div>
+
+    <p class="th3">- Trường hợp 3 (hay dùng) nếu thành phần bao ngoài có đặc tính tương đối thì nó sẽ lấy thành phần bao
+        ngoài đó làm gốc và hoạt động trong vùng không gian của thẻ đó</p>
+    <p class="th3">Định vị vị trí của nó tính theo thành phần cha(relative)</p>
+    <div class="testExemple relative">
+        <p class="tagA absolute">Thành phần A.</p>
+        <p class="tagB">Thành phần B.</p>
+    </div>
+
+</main>
+</body>
+</html>
