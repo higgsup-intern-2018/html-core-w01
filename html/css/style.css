@@ -4,20 +4,23 @@
 }
 div.blockLevel1 {
     border: 3px solid black;
-    margin: 10px 20px;
+    margin: 40px 60px;
+    padding: 5px 5px;
 }
 div.blockLevel1 p {
 padding: 5px;
 }
+}
 div.blockLevel2 {
-    border: 3px solid red;
+    border: 5px solid red;
     margin: 30px 100px;
 }
-div span{
+span{
+    background-color: yellow;
     border: 3px solid black;
     width: 500px;
     height: 300px;
-    margin: 600px 600px;
+    margin: 600px 300px;
 }
 div.meNu{
     border: 5px solid greenyellow;
@@ -31,5 +34,11 @@ div.meNu ul li{
 div.meNu ul li > a{
     text-decoration: none;
 }
-
-
+.testBlock{
+    width: 300px;
+    margin: 10px 50px;
+}
+.testInline img{
+    width: 150px;
+    height: 150px;
+}
