@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.content-box{
+    box-sizing: content-box;
+    width: 200px;
+    height: 50px;
+    padding: 30px;
+    /*trong content-box: nội dung ko bao giờ tràn qua padding do width,height chỉ sử dụng dc cho phần text bên trong.
+    Ko bao gồm padding,margin,border...*/
+    border: 10px solid blue;
+    background-color: green ;
+}
+ .border-box{
+     box-sizing: border-box;
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+     /*trong border-box:nếu padding tăng cao,nội dung(text) bên trong sẽ tràn ra ngoài do chiều rộng(width) và*/
+     /*chiều cao(height) bao trọn cả border padding.*/
+    border: 10px solid blue;
+}

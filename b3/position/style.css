@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 60px;
+    border: 2px solid red;
+    /*position xác đinh vị trí tương đối và tuyệt đối cho thành phần.*/
+    /*trong đó relative định vị trí tương đối cho thành phần,*/
+    /*gán relative vào thẻ tagA nghĩa là xác định vị trí tương đối cho thẻ tagA;*/
+    /*sau đó khi tăng hoặc giảm top,bottom,left,right thì vị trí của tagA sẽ thay đổi tương ứng(vị trí thay đổi lấy
+    tham chiếu từ điểm mà thẻ tagA được gán relative) */
+    /*do relative là giá trị tương đối cho position. */
+}
+.container .tagA{
+    color: blue;
+    position: relative;
+    height: 30px;
+    top: 80px;
+    left: 50px;
+
+}
+
+.container .tagB{
+
+    color: green;
+    height: 30px;
+
+}

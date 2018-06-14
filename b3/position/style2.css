@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width : 100%;
+    height: 60px;
+    border: 2px solid blue;
+    position : relative;
+    /*gán vị trí tương đối(relative) cho container*/
+}
+
+.container .tagA{
+    color: green;
+    position: absolute;
+    left: 170px;
+    bottom: 1px;
+    /*gán thẻ absolute(tuyệt đối) cho thẻ tagA,vị trí sẽ dc tính theo tham chiếu của container(relative),*/
+    /*khi tagA di chuyển lên xuống trái phải thẻ tagB sẽ đổi vị trí lên đầu thay thế cho tagA*/
+
+}
+.container .tagB{
+    color: blue;
+
+}
