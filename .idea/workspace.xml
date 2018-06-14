@@ -150,6 +150,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/html-core-w01-Leducthang" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -194,12 +195,12 @@
       <workItem from="1528828383002" duration="1842000" />
       <workItem from="1528865391245" duration="2167000" />
       <workItem from="1528890931687" duration="11798000" />
-      <workItem from="1528940005667" duration="171000" />
+      <workItem from="1528940005667" duration="948000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17343000" />
+    <option name="totallyTimeSpent" value="18120000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
