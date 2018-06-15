@@ -1,0 +1,13 @@
+.cl{
+    color: blue;
+    padding: 30px 100px;
+    /*class nhóm tất cả các thành phần cùng tên và áp chung giá trị (values) cho chúng.*/
+    /*ở đây có 2 đoạn text sử dụng chung class nên sẽ có chung values color: blue;*/
+}
+.bl{
+    border: 5px solid yellow;
+    background-color: gray;
+    color: green;
+    margin-top: 200px;
+
+}

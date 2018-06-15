@@ -1,0 +1,9 @@
+ a:lang(vi){
+    color: green;
+    font-weight: bold;
+    font-size: 25px;
+    lang gom tất cả những thành phần có cùng ngôn ngữ viết lại
+}
+a:lang(en){
+    color: yellow;
+}x

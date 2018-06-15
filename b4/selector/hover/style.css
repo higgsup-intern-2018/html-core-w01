@@ -1,0 +1,6 @@
+a:hover {
+    background: darkblue;
+    color: #fff;
+}
+/*thuộc tính hover sẽ bọc toàn bộ nội dung trong thẻ,khi di chuyển chuột lên nội dung*/
+/*lúc này nội dung đã dc bọc trong hover,tạo thuộc tính background và color cho nội dung(ở đây là thẻ a),*/
