@@ -1,0 +1,43 @@
+/*div{*/
+    /*border: 5px solid black;*/
+    /*background-color: yellow;*/
+/*}*/
+.theOne{
+    border: 1px solid #c10bff;
+    background-color: green;
+}
+
+p, span {
+    font-size: 14px;
+}
+
+div.insideDiv + p {
+    color: yellow;
+}
+span[name=test]
+{
+    color: #1b6d85;
+}
+
+p[title~=mau1]
+{
+    color: yellow;
+}
+
+p[title|=xa]
+{
+    color: red;
+}
+input:disabled {
+    color: red !important;
+    background-color: yellow;
+}
+#12 .abc div[name] {
+
+}
+#xyz #13 div[name] {
+
+}
+.abc2{
+
+}

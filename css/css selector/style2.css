@@ -1,0 +1,18 @@
+p {
+    background-color: red;
+    color: white;
+}
+.intro {
+    background-color: yellow;
+}
+p.intro {
+    background-color: black;
+}
+#Test {
+    background-color: green;
+}
+
+.abc2
+{
+    color: red;
+}

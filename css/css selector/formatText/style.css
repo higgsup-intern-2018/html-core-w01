@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.frame{
+    border: 1px solid black;
+    margin: 10px 50px;
+}
+.color{
+    color: red;
+}
+.fontSize{
+    font-size: large;
+}
+.font{
+    font-family: "Book Antiqua";
+}
+.fontWeight{
+    font-weight: 200;
+}
+.fontStyle{
+    font-style: italic;
+}
+.letterSpacing{
+    letter-spacing: 5px;
+}
+.lineHeight{
+    line-height: 10px;
+}
+.textDeco{
+ text-decoration: underline;   
+}
+.wordSpacing{
+    word-spacing: 5px;
+}
