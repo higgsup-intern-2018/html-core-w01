@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    border: 5px solid black;
+    padding: 20px;
+    text-align: center;
+}
+.navMenu{
+    border: 5px solid red;
+    padding: 30px;
+    text-align: center;
+}
+.mainContent{
+    border: 5px solid blue;
+    padding: 25px;
+    height: 400px;
+}
+div.leftContent{
+    border: 2px solid orangered;
+    float: left;
+    height: 100%;
+    text-align: center;
+}
+div.rightContent{
+    border: 2px solid yellow;
+    float: right;
+    height: 100%;
+    text-align: center;
+}
+div.centerContent{
+    border: 2px solid purple;
+    height: 100%;
+    text-align: center;
+}
+.footer{
+    clear: both;
+    border: 5px solid firebrick;
+    text-align: center;
+    padding: 20px;
+}
+div p{
+    text-align: center;
+}
