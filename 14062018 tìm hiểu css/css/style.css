@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+.content{
+    width:1024px;
+    margin:0 auto;
+}
+.content a{
+    display: block;
+}
+.item{
+    border: 1px solid red;
+}
+
+.item p{
+    color:olivedrab;
+}
+.item + p{
+    color:red;
+}
