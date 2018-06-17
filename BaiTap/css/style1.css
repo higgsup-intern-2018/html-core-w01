@@ -1,0 +1,53 @@
+@font-face {
+    font-family: mainFont;
+    src: url(../Catamaran/Catamaran-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#main{
+    margin: 20px 10px;
+}
+.column{
+    float: left;
+    padding: 5px 10px;
+    width: 30%;
+}
+.image{
+    position: relative;
+}
+.imgSize{
+    width: 400px;
+    height: 300px;
+    z-index: 1;
+}
+.icon{
+    float: right;
+    font-size: 30px;
+    z-index: 2;
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 20px;
+    color: white;
+}
+.detail, .detail2{
+    position: absolute;
+    margin-left: 29px;
+    margin-top: -52px;
+    color: white;
+    font-size: 30px;
+    font-family: mainFont;
+}
+.detail2{
+    margin-left: 284px;
+    margin-top: -42px;
+    font-size: 20px;
+}
+.text{
+    font-size: 15px;
+    font-family: mainFont;
+}
+a{
+    text-decoration: none;
+}

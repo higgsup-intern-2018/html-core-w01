@@ -1,0 +1,45 @@
+@font-face {
+    font-family: mainFont;
+    src: url(../Catamaran/Catamaran-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#mainContent{
+    width: 900px;
+    margin: 0 auto;
+}
+.poster{
+    width: 100%;
+    position: relative;
+}
+.poster img{
+    width: 900px;
+    height: 400px;
+}
+.content{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 60px;
+    color: white;
+    font-family: mainFont;
+}
+.price{
+    font-size: 25px;
+}
+.nameTrip{
+    font-size: 25px;
+    margin-top: 85px;
+    margin-left: 0px;
+}
+.vote{
+    margin-top: 85px;
+    margin-left: 0px;
+    margin-top: -40px;
+    margin-left: 577px;
+    font-size: 25px;
+}
+.detail{
+    float: left;
+}
