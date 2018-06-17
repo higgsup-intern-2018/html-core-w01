@@ -1,0 +1,104 @@
+*{
+    box-sizing:border-box;
+}
+@font-face {
+    font-family: 'Conv_Catamaran-Regular';
+    src: url('../fonts/Catamaran-Regular.eot');
+    src: url('../fonts/Catamaran-Regular.woff') format('woff'), url('../fonts/Catamaran-Regular.ttf') format('truetype'), url('../fonts/Catamaran-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'Conv_Catamaran-Regular';
+}
+.clearfix{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.img img{
+    max-width: 100%;
+}
+.content{
+    width:1024px;
+    margin: auto;
+}
+.tung{
+    position: relative;
+}
+.tung-left{
+    position: absolute;
+    top:20px;
+    left:10px;
+    width: 135px;
+}
+.tung__btn button{
+   width: 100%;
+    border: none;
+    color: white;
+    font-size: 15px;
+    line-height: 43px;
+}
+.btn--red{
+    background: #f7575c;
+}
+.dot{
+    width: 100%;
+    position: absolute;
+    top:110px;
+    left: 47px;
+    display: inline-block;
+    margin: auto;
+
+}
+.dots{
+    width:8px;
+    height:8px;
+    background:white;
+    border-radius:50%;
+    display: inline-block;
+}
+.dots.dot--active{
+    width: 9px;
+    height: 9px;
+    background: transparent;
+    border: 1px solid #d0d0d0;
+}
+.tung-right{
+    max-width:350px;
+    margin-left: 168px;
+}
+.country{
+    width: 50%;
+    float:left;
+    text-align: left;
+}
+.rating{
+    width: 50%;
+    float:left;
+    text-align: right;
+}
+.fa-star.checked{
+    border: 1px solid white;
+    background: transparent !important;
+}
+.tung__social ul li a{
+    text-decoration:none;
+}
+.tung__social ul{
+    list-style-image: url("../img/icon1.jpg");
+}
+.tung__title h2{
+    padding-top:9px;
+    margin: 0;
+}
+.tung__rating{
+    font-size: 12px;
+    font-weight: 700;
+}
+.tung__social ul li a{
+    color: #4d9daa;
+}
