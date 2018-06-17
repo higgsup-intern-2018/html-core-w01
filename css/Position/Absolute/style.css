@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+div.bigTable{
+    margin: 10px 20px;
+    border: 5px solid black;
+    width: 300px;
+    height: 300px;
+}
+.tagA{
+    background-color: yellow;
+    height:30px;
+    position: absolute;
+    right: 800px;
+    bottom: 500px;
+    width: 100px;
+}
+.tagB{
+    background-color: dodgerblue;
+    height: 30px;
+    width: 100px;
+}

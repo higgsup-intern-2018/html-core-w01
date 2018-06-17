@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bigTable{
+    margin: 10px 20px;
+    border: 5px solid black;
+    width: 300px;
+    height: 300px;
+}
+.tagA{
+    background-color: yellow;
+    width: 100px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    /*Thuộc tính position: relative*/
+    /*thẻ A cách vị trí cũ ở top và left 50px*/
+}
+.tagB{
+    background-color: dodgerblue;
+    width: 100px;
+}

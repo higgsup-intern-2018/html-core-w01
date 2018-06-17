@@ -1,0 +1,44 @@
+.banner > a > img {
+    width: 800px;
+    height: 300px;
+}
+div.blockLevel1 {
+    border: 3px solid black;
+    margin: 40px 60px;
+    padding: 5px 5px;
+}
+div.blockLevel1 p {
+padding: 5px;
+}
+}
+div.blockLevel2 {
+    border: 5px solid red;
+    margin: 30px 100px;
+}
+span{
+    background-color: yellow;
+    border: 3px solid black;
+    width: 500px;
+    height: 300px;
+    margin: 600px 300px;
+}
+div.meNu{
+    border: 5px solid greenyellow;
+    height: 40px;
+}
+div.meNu ul li{
+    float: left;
+    list-style: none;
+    padding: 5px 10px;
+}
+div.meNu ul li > a{
+    text-decoration: none;
+}
+.testBlock{
+    width: 300px;
+    margin: 10px 50px;
+}
+.testInline img{
+    width: 150px;
+    height: 150px;
+}
