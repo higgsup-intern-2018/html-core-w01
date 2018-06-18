@@ -40,6 +40,32 @@
     margin-left: 577px;
     font-size: 25px;
 }
-.detail{
-    float: left;
+.buyInfo{
+    display: flex;
+    font-family: mainFont;
+}
+.column{
+    width: 33%;
+}
+ul li {
+    list-style: none;
+    font-family: mainFont;
+    padding: 5px 5px;
+}
+.author{
+    display: flex;
+    font-family: mainFont;
+}
+.avatar{
+    border-radius: 50%;
+    width: 50%;
+    margin-top: 10px;
+}
+.column p.download{
+    display: block;
+    padding: 10px 10px;
+    margin: auto;
+    background-color: pink;
+    width: 42%;
+    color: white;
 }
