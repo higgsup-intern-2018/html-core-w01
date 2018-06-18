@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="vi" lang="vi">
+<head>
+    <title>Tiêu đề trang web</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen,print"/>
+</head>
+
+<body>
+<h3 class="white">clear fix là tạo thêm 1 thành phần nằm bên dưới thành phần sử dụng float để kéo trả lại không gian cho thành phần sử
+    dụng float</h3>
+<div>
+    <p class="first">Thành phần A.</p>
+    <p class="second">Thành phần B.</p>
+</div>
+<p class="third">Thành phần C.</p>
+<br> <br>
+
+<p class="white">do class A và B (cùng parent element ) sử dụng float nên tạo ra không gian rỗng ở giữa nên thành phần C
+    sẽ chiếm lấy
+    chỗ đó</p>
+<p class="white">như ý đồ ta sẽ dùng clear both cho thằng C để ngăn nó không chiếm vùng không gian của 2 thằng trên</p>
+<br>
+<div>
+    <p class="first">Thành phần A.</p>
+    <p class="second">Thành phần B.</p>
+</div>
+<p class="third clear-both">Thành phần C.</p>
+<br><br><br>
+<p class="white">Trông thì có vẻ ổn nhưng thực tếp thành phần C vẫn bj ảnh hưởng bởi float nên sẽ không sử dụng được
+    padding,margin.
+    vì thuộc tính lại không được thực thi trên thẻ div mà có tác dụng ở vùng hiển thị của thành phần A và thành phần
+    B</p>
+
+<i class="white">Tiếp theo chúng ta sẽ sử dụng bên chọn after và kết hợp với content</i>
+<p class="white">trước tiên là content="." => tuy nhiên dấu chấm vẫn chưa được tạo vì chưa tạo vùng không gian tạm</p>
+<p class="white">nên ta sẽ sử dụng thêm thuộc tính: clear:both để ngăn chăn thuộc tính float </p>
+<p class="white">biến dấu chấm trở thành block</p>
+<p class="white">và cuối cùng là ẩn dấu chấm đi. visibility: hidden;height:0;line-height:0;</p>
+<div>
+    <p class="first">Thành phần A.</p>
+    <p class="second">Thành phần B.</p>
+</div>
+<p class="third">Thành phần C.</p>
+
+</body>
+</html>

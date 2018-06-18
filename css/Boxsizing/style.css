@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.boxSizing{
+    margin: 10px auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 5px solid red;
+    width: 400px;
+    height: 400px;
+    background-color: yellow;
+    padding: 30px;
+}

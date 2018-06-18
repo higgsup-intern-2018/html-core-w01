@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div.bigTable{
+    border: 5px solid black;
+    height: 100px;
+}
+div:after{
+    clear: both;
+    content: "yolo";
+    display: block;
+    visibility: hidden;
+    /*Dùng clearfix để ngăn cản ảnh hưởng float
+     Dùng display tạo block cho vùng*/
+}
+p.tagA{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+p.tagB{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+p.tagC{
+    background-color: blue;
+    height: 100px;
+    clear: both;
+    margin-top: 20px; /* Đã có thể margin-top ngay sau các thẻ có thuộc tính float trên*/
+}
