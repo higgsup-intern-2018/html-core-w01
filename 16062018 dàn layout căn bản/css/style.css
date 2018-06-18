@@ -12,15 +12,10 @@ body{
     font-family: 'Conv_Catamaran-Regular';
 }
 .clearfix{
-    clear: both;
-    content: ".";
-    display: block;
-    height: 0;
-    line-height: 0;
-    visibility: hidden;
+    overflow: auto;
 }
 .img img{
-    max-width: 100%;
+    width: 100%;
 }
 .content{
     width:1024px;
@@ -101,4 +96,115 @@ body{
 }
 .tung__social ul li a{
     color: #4d9daa;
+}
+.content2{
+    max-width: 1124px;
+    margin: auto;
+    background:red;
+}
+.tung-item{
+    width: 33.33%;
+    float: left;
+    position: relative;
+    padding: 0 10px;
+}
+
+.country-date{
+    position: absolute;
+    top: 171px;
+    width: 95%;
+    color: white;
+}
+
+.country-date .nation{
+    float: left;
+    padding-left: 20px;
+    font-size: 23px;
+    font-weight: 700;
+}
+.country-date .date{
+    float: right;
+    padding-right:15px;
+}
+.tung-item__caption h3{
+    margin: 0;
+}
+.tung-item__caption p{
+    margin: 0;
+    font-size:14px;
+}
+.tung-item__caption{
+    font-weight:600;
+}
+.tung-item__caption a{
+    text-decoration: none;
+}
+.tung-item__img img{
+    max-height: 218px;
+}
+.tung-item__caption span, a{
+    font-size:14px;
+}
+.content3{
+    max-width:720px;
+    margin: auto;
+}
+.banner{
+    height: 355px;
+    background: url("../img/5cd8491891210d712c8b6fba2ba9ef81.jpeg") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.banner-text{
+    color: white;
+    position: absolute;
+    left: 50px;
+    top: 85px;
+    width: 645px;
+
+}
+.banner__price{
+
+}
+
+.banner__title h1{
+    font-size: 39.5px;
+    margin: 0;
+    line-height:38px;
+}
+.banner__adventure{
+    font-size: 25px;
+    margin: 87px 0 0 0;
+}
+.banner__chuck{
+    display: inline-block;
+    float: left;
+}
+.banner__star{
+    display: inline-block;
+    float: right;
+}
+.banner__rating{
+    font-size:25px;
+}
+.banner__rating a{
+    font-size:25px;
+    text-decoration: none;
+    padding-left: 10px;
+    color:#237d8c;
+}
+.banner--number{
+    padding-left: 10px;
+}
+
+.info-top__item{
+    width:33.33%;
+    float:left;
+    padding:0 15px;
+}
+.info-top__item .start .title:before{
+    display: inline-block;
+    content: '\f041';
+    font-family: FontAwesome;
+
 }
