@@ -206,5 +206,12 @@ body{
     display: inline-block;
     content: '\f041';
     font-family: FontAwesome;
+    padding-right: 15px;
 
+}
+.info-top__item .start span{
+    font-weight: 600;
+}
+.info-top__item .start a{
+    text-decoration: none;
 }
