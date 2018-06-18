@@ -5,43 +5,45 @@
 .mainContent{
     font-family: mainFont;
     width: 100%;
-}
-.mainContent div.ava,
-.info{
-    float: left;
-    margin: 15px;
+    display: flex;
 }
 .ava{
     width: 20%;
+    margin-left: 30px;
 }
 .info{
-    width: 35%;
+    width: 30%;
+    margin-left: 30px;
     position: relative;
 }
 .avatar img{
-    width: 230px;
-    height: 230px;
+    width: 100%;
     margin-top: 30px;
 }
 .status p{
     color: navy;
 }
-.vote{
-    float: right;
-    position: absolute;
-    margin-left: 260px;
-    margin-top: -25px;
-}
 a{
     text-decoration: none;
     margin-left: 10px;
+    color: #4694A0;
 }
 .message{
-    width: 120px;
-    height: 30px;
-    float: left;
-    background-color: mediumvioletred;
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #F7575C;
     color: white;
-    margin-left: 60px;
-    text-align: center;
+    font-family: mainFont;
+}
+.vote{
+    position: absolute;
+    float: right;
+    margin-left: 80px;
+}
+div.status i{
+    color: #4694A0;
+}
+.fas, .fab{
+    font-size: 25px;
 }

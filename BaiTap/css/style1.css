@@ -7,21 +7,24 @@
     padding: 0;
 }
 #main{
-    margin: 20px 10px;
+    display: flex;
 }
 .column{
-    float: left;
-    padding: 5px 10px;
-    width: 30%;
+    width: 33.33%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 20px;
+}
+.column:first-child{
+    margin-left: 20px;
 }
 .image{
     position: relative;
 }
 .imgSize{
-    width: 400px;
-    height: 300px;
-    z-index: 1;
+    width: 100%;
 }
+
 .icon{
     float: right;
     font-size: 30px;
