@@ -1,0 +1,116 @@
+@font-face {
+  font-family: font;
+  src: url("../Catamaran/Catamaran-SemiBold.ttf"); }
+
+@font-face {
+  font-family: font2;
+  src: url("../Catamaran/Catamaran-Bold.ttf"); }
+
+@font-face {
+  font-family: font3;
+  src: url("../Catamaran/Catamaran-Light.ttf"); }
+
+@font-face {
+  font-family: font4;
+  src: url("../Catamaran/Catamaran-Medium.ttf"); }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #000;
+  font-family: font4; }
+  body .container {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    height: 800px; }
+    body .container .img-zone {
+      height: 65%;
+      position: relative; }
+      body .container .img-zone img {
+        width: 100%;
+        height: 90%; }
+      body .container .img-zone .sm-img-zone {
+        width: 80%;
+        margin-left: 65px; }
+        body .container .img-zone .sm-img-zone p:first-child {
+          position: absolute;
+          top: 80px;
+          font-size: 50px;
+          color: #fff;
+          font-family: font2; }
+        body .container .img-zone .sm-img-zone hr {
+          width: 415px;
+          background: #00CCFF;
+          position: absolute;
+          top: 136px;
+          height: 2px; }
+        body .container .img-zone .sm-img-zone .sencond-child {
+          position: absolute;
+          top: 150px;
+          font-size: 35px;
+          color: #fff;
+          font-family: font4; }
+        body .container .img-zone .sm-img-zone .third-child {
+          position: absolute;
+          top: 320px;
+          font-size: 35px;
+          color: #fff;
+          font-family: font4; }
+        body .container .img-zone .sm-img-zone p:last-child {
+          position: absolute;
+          top: 380px;
+          font-size: 35px;
+          color: #fff;
+          font-family: font4; }
+          body .container .img-zone .sm-img-zone p:last-child span {
+            color: #00B2BF; }
+      body .container .img-zone .all-i {
+        position: absolute;
+        top: 380px;
+        right: 40px; }
+        body .container .img-zone .all-i i {
+          font-size: 35px;
+          color: #00B2BF; }
+        body .container .img-zone .all-i #last {
+          color: #fff; }
+        body .container .img-zone .all-i p {
+          color: #fff;
+          display: inline-block;
+          font-size: 45px;
+          margin-left: 10px; }
+    body .container .text-zone {
+      height: 35%;
+      padding: 20px;
+      margin-top: -45px;
+      position: relative; }
+      body .container .text-zone .sm-text-zone {
+        width: 100%;
+        height: 100%; }
+        body .container .text-zone .sm-text-zone i {
+          font-size: 25px;
+          margin-right: 20px; }
+        body .container .text-zone .sm-text-zone span {
+          color: #00B2BF; }
+        body .container .text-zone .sm-text-zone .quest {
+          font-size: 25px;
+          margin-left: 10px; }
+      body .container .text-zone button {
+        height: 70px;
+        padding: 0 20px;
+        border-radius: 1%;
+        background: #ff5764;
+        font-size: 25px;
+        color: snow;
+        position: absolute;
+        top: 30px;
+        right: 30px; }
+      body .container .text-zone img {
+        position: absolute;
+        top: 200px;
+        right: 100px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; }

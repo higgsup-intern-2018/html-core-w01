@@ -1,0 +1,86 @@
+@font-face
+	font-family: font
+	src: url('../Catamaran/Catamaran-SemiBold.ttf')
+@font-face
+	font-family: font2
+	src: url('../Catamaran/Catamaran-Bold.ttf')
+@font-face
+	font-family: font3
+	src: url('../Catamaran/Catamaran-Light.ttf')
+@font-face
+	font-family: font4
+	src: url('../Catamaran/Catamaran-Medium.ttf')
+*
+	padding: 0
+	margin: 0
+body
+	background: #000
+	font-family: font4
+	.container
+		background: #fff
+		margin-top: 80px
+		height: 350px
+		padding: 20px
+		padding-top: 40px
+		.content
+			width: 80%
+			display: flex
+			flex-direction: row
+			// background: red
+			.img-zone
+				display: flex
+				flex-direction: column
+				width: 30%
+				// background: green
+				margin-right: 50px
+				img
+					height: 75%
+					width: 95%
+					margin-bottom: 18px
+				button
+					width: 95%
+					height: 30%
+					border-radius: 1%
+					background: rgb(255,87,95)
+					font-size: 30px
+					color: rgb(255,250,250)
+			.text-zone
+				width: 65%
+				// background: yellow
+				p:first-child
+					font-size: 45px
+					line-height: 1
+					font-family: font
+				.address
+					font-size: 25px
+					font-family: font
+					margin-bottom: 10px
+					display: inline-block
+					margin-right: 160px
+				i
+					font-size: 20px
+					color: #00B2BF
+				.review
+					font-size: 25px
+					font-family: font
+					margin-bottom: 10px
+					display: inline-block
+					color: #00B2BF
+					margin-left: 15px
+				hr
+					background: #C2C2C2
+					height: 3px
+					margin-bottom: 15px
+				.network
+					i
+						font-size: 40px
+						margin-bottom: 10px
+						margin-right: 15px
+				a
+					text-decoration: none
+					color: #00B2BF
+					font-size: 25px
+					vertical-align: super
+				p:last-child
+					font-size: 25px
+					margin-top: 20px
