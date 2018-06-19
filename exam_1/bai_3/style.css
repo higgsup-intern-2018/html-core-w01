@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    display: flex;
+}
+.row{
+    width: 33.3%;
+    margin-top: 20px;
+    padding: 20px;
+}
+.img{
+    position: relative;
+}
+.imgs{
+    width: 410px;
+    height:300px;
+}
+.img .icon{
+    position: absolute;
+    margin-right:30px;
+    margin-top: 50px;
+    color: white;
+    float: right;
+}
+.left-text{
+    width: 50%;
+    float: left;
+    position:absolute;
+    color: white;
+    font-weight: bold;
+    bottom: 20px;
+    left: 20px;
+    font-size: 26px;
+}
+.right-text{
+    width: 50%;
+    float: right;
+    position:absolute;
+    color: white;
+    font-weight: bold;
+    bottom: 20px;
+    left: 300px;
+    font-size: 26px;
+}
+p{
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
