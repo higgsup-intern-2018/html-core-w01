@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai Tap JS so 5 - Dao nguoc chuoi</title>
+</head>
+<body>
+    <input type="text" id="str" placeholder="Nhap chuoi can dao nguoc"/>
+    <button onclick="myFunction()">Dao nguoc</button>
+    <p id="dapAn"></p>
+    <script>
+        function myFunction() {
+            var str = document.getElementById("str").value;
+            var splitStr = str.split("");
+            var reverseArray = splitStr.reverse();
+            document.getElementById("dapAn").innerHTML = reverseArray.join("");
+        }
+    </script>
+</body>
+</html>

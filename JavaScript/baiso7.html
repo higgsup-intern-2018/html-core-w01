@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap JS so 7 - so nguyen</title>
+</head>
+<body>
+<input type="text" id="str1" />
+<input type="text" id="str2" />
+<button onclick="myFunction()">Tinh</button>
+<p id="demo"></p>
+<script>
+    function myFunction() {
+    var chuoi1 = document.getElementById("str1").value;
+    var songuyen1 = parseInt(chuoi1);
+    var chuoi2 = document.getElementById("str2").value;
+    var songuyen2 = parseInt(chuoi2);
+    document.getElementById("demo").innerHTML = songuyen1 + songuyen2;
+}
+</script>
+</body>
+</html>

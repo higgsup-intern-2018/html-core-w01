@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai Tap JS so 6 - snake case</title>
+</head>
+<body>
+    <input type="text" id="str"/>
+    <button type="button" onclick="myFunction()">Chuyen doi</button>
+    <p id="demo"></p>
+<script>
+    function myFunction() {
+        var str = document.getElementById("str").value;
+        var snake = str.replace(/ /gm, "_");
+        document.getElementById("demo").innerHTML = snake;
+    }
+</script>
+</body>
+</html>
