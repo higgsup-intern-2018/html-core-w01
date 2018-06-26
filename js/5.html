@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b5</title>
+</head>
+<body>
+<input type="text" id="test" placeholder="nhap ky tu">
+<button onclick="myFunction()">click</button>
+<p id="kq"></p>
+<script>
+    function myFunction() {
+        // lấy giá trị string khi nhập tại ô tìm kiếm.
+        var string = document.getElementById("test").value;
+
+        // split phân rã giá trị vừa dc nhập.
+        var splitString = string.split("");
+
+        // reverse đảo lộn vị trí giá trị vừa dc phân rã.
+        var reverseArray = splitString.reverse();
+
+        // join gộp các giá trị vừa đảo lộn thành string mới.
+        document.getElementById("kq").innerHTML = reverseArray.join("");
+
+    }
+</script>
+</body>
+</html>

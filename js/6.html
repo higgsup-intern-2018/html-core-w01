@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b6</title>
+</head>
+<body>
+<button type="button" onclick="myFunction()">click here</button>
+<p id="test"></p>
+<script>
+    var name = "hello world !";
+    //lấy giá trị của biến name.
+    document.getElementById("test").innerHTML = name;
+    function myFunction() {
+
+        //khai báo và xác định giá trị của new_name thay thế cho name.
+        var new_name = name.replace("hello world !" , "Do I know You ?");
+        document.getElementById("test").innerHTML = new_name;
+    }
+
+
+</script>
+</body>
+</html>

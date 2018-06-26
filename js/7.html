@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b7</title>
+</head>
+<body>
+<input type="text" id="t1">
+<input type="text" id="t2">
+<button onclick="myFunction()">click to count</button>
+<p id="test"></p>
+<script>
+    function myFunction() {
+        //lấy giá trị str1 str2
+        var str1 = document.getElementById("t1").value;
+        // gán str1 str2 dạng số nguyên.
+        var int1 = parseInt(str1);
+        var str2 = document.getElementById("t2").value;
+        var int2 = parseInt(str2);
+        document.getElementById("test").innerHTML = int1 + int2;
+    }
+
+</script>
+</body>
+</html>
