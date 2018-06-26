@@ -11,19 +11,19 @@
     <script>
         function myFunction() {
             var stringS = document.getElementById("str").value;
-            var string = stringS.replace(" ","");
+            var string = stringS.replace(/ /gm, "");
             var str = string.toLowerCase();
-            var len = str.length;
+            var strSp = str.split("");      /*strSP la chuoi ban dau*/
+            var strRe = strSp.reverse();
             var i = 0;
-            for (i=0; i < len/2; i++){
-                if (str[i] == str[len-i-1]){
+            for (i=0; i < strSp.length; i++){
+                if (strSp == strRe){
                     document.getElementById("demo").innerHTML = "Là chuỗi Palindmore";
                 }
                 else {
                     document.getElementById("demo").innerHTML = "Không phải chuỗi Palindmore";
                 }
             }
-
         }
 
     </script>
