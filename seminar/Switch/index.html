@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="index-style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="step">
+			<div class="first">
+				<p style="font-size: 35px;color: lightgreen">Break</p>
+				<p><span>Break</span> sẽ giúp chương trình thoát khỏi lệnh switch
+				</p>
+			</div>
+			<div class="second">
+				<p style="font-size: 35px;color: lightgreen">Code</p>
+				<img src="break2.png" alt="">
+			</div>
+			<div class="third">
+				<p style="font-size: 35px;color: lightgreen">Out put</p>
+				<p id="add2"></p>
+			</div>
+		</div>
+	</div>
+	<div class="step">
+		<div class="first">
+			<p>
+				 Nếu bạn không thêm lệnh <span>Break</span> thì chương trình sẽ tiếp tục kiểm tra và chạy tiếp ở case tiếp theo.
+			</p>
+		</div>
+		<div class="second">
+			<img src="break.png" alt="">
+		</div>
+		<div class="third">
+			<p id="add"></p>
+		</div>
+	</div>
+	<p style="margin: 30px; font-size: 30px; color: lightgreen">Quy trình chạy</p>
+	<p style="margin: 30px; line-height: 30px">
+		Nếu kết quả tham số có giá trị là <span>1</span> thì những đoạn code nằm bên trong <span>case 1</span> sẽ được thực hiện, ngược lại nó sẽ nhảy xuống case tiếp theo.
+		Lúc này nếu nó có giá trị là <span>2</span> thì những đoạn code trong <span>case 2</span> sẽ được thực hiện, ngược lại nó kiểm tra tiếp xem còn case nào không.
+		Nhận thấy không còn case nào nữa nên nó sẽ kiểm tra có lệnh <span>default</span> không? Vì có lệnh <span>default</span> nên nó sẽ chạy đoạn code trong lệnh <span>default</span> đó rồi thoát khỏi switch case.</p>
+		<p style="font-size: 35px;color: lightgreen">Liên kết với biến từ người dùng</p>
+		<p>Trường hợp này nếu bạn nhập một màu khác với màu đỏ (<span style="color: red">red</span>) và vàng (<span style="color: yellow">yellow</span>) thì sẽ không có thông báo gì.
+
+</p>
+	<div class="step">
+		<div class="double">
+			<p style="font-size: 35px;color: lightgreen">Code</p>
+			<img src="break3.png" alt="">
+		</div>
+		<div class="button">
+			<button onclick="agru()">
+				RUN!!!
+			</button>
+		</div>
+		<div class="double">
+			<p id="add3"></p>
+		</div>
+	</div>
+	<p style="font-size: 35px;color: lightgreen;margin: 30px 0">Trường hợp gom case</p>
+	<div class="step">
+		<div class="double">
+			<p style="font-size: 35px;color: lightgreen">Code</p>
+			<img src="break4.png" alt="">
+		</div>
+		<div class="button">
+			<button onclick="agru2()">
+				RUN!!!
+			</button>
+		</div>
+		<div class="double">
+			<p id="add4"></p>
+		</div>
+	</div>
+	<p style="font-size: 35px;color: lightgreen">Cái kết có hậu <span style="color: red"><3</span> </p>
+	<p style="margin: 30px; line-height: 30px">Để xử lý cho một trường hợp ngoại lệ nào đó thì ta sử dụng lệnh default.<br>
+Nếu nhiều nhánh cùng xử lý chung một đoạn code thì ta sẽ bỏ đi lệnh break ở bên trong, như vậy nó sẽ chạy luôn case ở phía dưới mà không cần kiểm tra điều kiện.
+</p>
+</div>
+	<script>
+	function break1(){
+		var p = document.getElementById('add2');
+		switch(2){
+			case 1:
+				p.innerHTML += "dap an la 1 </br>";
+				console.log('kho vai');
+				break;
+			case 2:
+				p.innerHTML += "dap an la 2 </br>";
+				console.log('kho vaiiiiii nhai');
+				break;
+			case 3:
+				p.innerHTML += "dap an la 3 </br>";
+				break;
+			case 4:
+				p.innerHTML += "dap an la 4 </br>";
+				break;
+		}
+	}
+		break1();
+	function break2(){
+		var p = document.getElementById('add');
+		switch(1){
+			case 2:
+				p.innerHTML += "dap an la 1 </br>"
+				console.log('xxx');
+			case 3:
+				p.innerHTML += "dap an la 2 </br>"
+				console.log('xxx');
+				break;
+			case 1:
+				p.innerHTML += "dap an la 3 </br>"
+				console.log('xxx');
+			case 4:
+				p.innerHTML += "dap an la 4 </br>"
+				console.log('xxx2222');
+				break;
+		}
+	}
+		break2();
+	function agru(){
+		var color = prompt("Nhập một màu bất kì");
+		var p = document.getElementById('add3')
+		switch (color){
+    		case 'red' : 
+        	p.innerHTML = ("Bạn vừa nhập màu đỏ");
+        		break;
+    		case 'yellow' : 
+        	p.innerHTML = ("Bạn vừa nhập màu vàng");
+        	break;    
+}
+	}
+	function agru2(){
+		var color = prompt("Nhập màu bất kì");
+ 		var p = document.getElementById('add4');
+		switch (color){
+   			case 'red' : 
+   			case 'yellow' : 
+   			case 'blue' : 
+     			   p.innerHTML = ("Bạn vừa nhập màu đúng");
+       			 break; 
+    		default :
+        			p.innerHTML = ("Bạn vừa nhập màu sai");
+}
+	}
+	</script>
+</body>
+</html>

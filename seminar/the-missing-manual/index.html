@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Missing Manual</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="">CSS Selectors</h1>
+		<div class="show-zone">
+			<div class="left">
+				<div class="step">
+					<p>Selector là gì ?</p>
+				</div>
+				<div class="step">
+					<p>Các Selectors thông dụng ?</p>
+				</div>
+				<div class="step">
+					<p>Sự khác nhau giữa Id và Class ?</p>
+				</div>
+				<div class="step">
+					<p>Có 3 cách khai báo Css</p>
+					<p>1. Inline Style</p>
+					<p>(Khai báo cục bộ)</p>
+				</div>
+				<div class="step">
+					<p>2. Internal Style Sheet</p>
+					<p>(Khai báo nội tuyến)</p>
+				</div>
+				<div class="step">
+					<p>3. External Style Sheet</p>
+					<p>(Khai báo ngoại tuyến)</p>
+				</div>
+				<div class="step">
+					<p>Thứ tự ưu tiên trong CSS ?</p>
+				</div>
+				<div class="step">
+					<p>Sự kế thừa trong CSS</p>
+				</div>
+				<div class="step">
+					Format text
+				</div>
+				<div class="step">
+					Margin - Padding
+				</div>
+				<div class="step">
+					Border
+				</div>
+				<div class="step">
+					Responsive web là gì ?
+				</div>
+				<div style="border-bottom-style:none"class="step">
+					Media Query
+				</div>
+			</div>
+			<div class="right">
+				<div class="step">
+					<p>=>> Selector dùng để truy vấn đến các thẻ HTML. </p>
+					<p>=>> Một file HTML thì có rất nhiều thẻ giống nhau và thông thường chúng ta sẽ đặt các ID, class cho các thẻ để phân biệt, vậy thì trong CSS sẽ dựa vào các ID và class đó để truy xuất tới và cách truy xuất đó ta gọi là selector.</p><br>
+					<p>#id --- .class</p>
+				</div>
+				<div style="padding: 0" class="step">
+					<img src="anh1.png" alt="">
+				</div>
+				<div class="step">
+					<p><span style="color: red">ID</span> - trong một trang web, ID là duy nhất, không nên định nghĩa 2 ID giống nhau, mặc dù chúng vẫn có thể hoạt động bình thường</p>
+					<span id="same-id">cùng id</span>
+					<span id="same-id">cùng id</span>
+					<p><span style="color: red">Class</span> - ngược lại với ID, class có thể được sử dụng nhiều lần.</p>
+				</div>
+				<div class="step">
+					<img src="anh2.png" alt="">
+				</div>
+				<div class="step">
+					<img style="width: 320px;height: 120px" src="anh3.png" alt="">
+				</div>
+				<div class="step">
+					<img src="anh4.png" alt="">
+				</div>
+				<div class="step">
+					Trong Css: <br><br>
+					+ Inline Style ưu tiên cao nhất<br>
+					+ Sau đó là Id<br>
+					+ Tiếp theo là Class<br>
+					+ Và cuối cùng là Element
+				</div>
+				<div class="step">
+					+ Trong Css phần tử con có thể kế thừa lại thuộc tính của phần tử cha như các thuộc tính font-family, font-size, color...<br>
+					+ Hoặc chúng ta cũng có thể dùng thuộc tính inherit.
+				</div>
+				<div class="step">
+					+ Format text bằng thuộc tính css như: font-family, font-size, font-style, font-weight,font-variant,color,text-shadow...<br>
+					+ Format text bằng tag như: strong, em, b,i...
+				</div>
+				<div class="step">
+					+ Margin: khoảng cách từ border của phần tử với phần tử gần kề(không thay đổi kích thước khi set margin).<br>
+					+ Padding: khoảng cách từ nội dung bên trong phần tử với border của nó(sẽ làm tăng kích thước phần tử).<br>
+					+ Chúng ta có thể set margin/padding 4 vị trí là top, right, bottom, left.
+				</div>
+				<div class="step">
+					+ Thuộc tính border dùng để định dạng đường viền của phần tử.<br>
+					+ Có 3 loại thuộc tính chính là border-style,border-width,border-color<br>
+					+ div { border: 1px(border-width) double(border-style) red(border-color) }
+				</div>
+				<div class="step">
+					+ Responsive là kĩ thuật thiết kế web phù hợp với nhiều loại thiết bị màn hình và đều hiển thị tốt,không bị vỡ layout.<br>
+					+ Để responsive web chúng ta có thể dùng Media Query hoặc Bootstrap, Flexbox cùng với đó là không nên fix cứng width và height.
+				</div>
+				<div style="border-bottom-style:none;height: 200px" class="step">
+					+ Media Query giúp website có thể hiện thị tốt ở tất cả các loại màn hình khác nhau như điện thoại,PC,Laptop<br>
+					+ Cấu trúc @media media_type {code}<br><br>
+					<img src="anh5.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
