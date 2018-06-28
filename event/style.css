@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.container {
+  padding: 0 20px; }
+  .container .zone {
+    margin-bottom: 50px; }
+  .container div {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    background: lightgreen;
+    border: 5px solid #000; }
+    .container div .side {
+      width: 50%;
+      height: 500px;
+      font-size: 30px; }
+      .container div .side p {
+        margin-top: 50px;
+        width: 100%;
+        text-align: center; }
+      .container div .side img {
+        width: 300px;
+        height: 50%;
+        margin: auto; }
+      .container div .side button {
+        width: 100px;
+        height: 100px;
+        margin: auto; }
+
+.font {
+  font-size: 30px; }

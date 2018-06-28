@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event</title>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="container">
+		<!-- bai 1 -->
+		<div class="zone">
+			<div class="side">
+				<p>Bài 1</p>
+			</div>
+			<div class="side">
+				<img id="dog" onmouseout="changeImg2()" onmouseover="changeImg()" src="anh1.jpg" alt="">
+			</div>
+		</div>
+		<!-- bai 2 -->
+		<div class="zone">
+			<div class="side">
+				<p>Bài 2</p>
+			</div>
+			<div class="side">
+				<img id="meo" onclick="bai2()" src="meo.jpg" alt="">
+			</div>
+		</div>
+		<!-- bai 3 -->
+		<div class="zone">
+			<div class="side">
+				<p>Bài 3</p>
+			</div>
+			<div class="side">
+				<button onclick="bai3()">
+					Click here to change bgColor !
+				</button>
+			</div>
+		</div>
+		<!-- bai 4 -->
+		<div class="zone">
+			<div class="side">
+				<p>Bài 4</p>
+			</div>
+			<div class="side">
+				<img id="slide" src="" alt="">
+				<button onclick="pre()" class="font">pre</button>
+				<button onclick="next()" class="font">next</button>
+				<span id="text"></span>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="event.js"></script>
+</body>
+</html>
