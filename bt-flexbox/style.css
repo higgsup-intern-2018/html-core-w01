@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+}
+.about {
+    width: 80%;
+    background: lightgreen;
+    height: 40px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+.flex-ul {
+    display: flex;
+    flex-direction: row;
+}
+.flex-ul li {
+    width: 25%;
+    list-style: none;
+}
+.flex-ul li a{
+    text-decoration: none;s
+}
+a:hover{
+    background-color: yellow;
+}
+.add li {
+    display: none;
+}
+.dropdown:hover ul li {
+    display: block;
+    width: 100%;
+    color: green;
+}
+.animation-rotate{
+    margin-top: 50px;
+    padding-top: 100px;
+    animation: rotate 1s linear infinite;
+}
+.animation-rotate p{
+    margin: auto;
+    border-radius:100%;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

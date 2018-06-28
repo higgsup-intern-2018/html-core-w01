@@ -1,0 +1,15 @@
+﻿task1:
+ 
+-> không nên viết css inline.
+-> image nên set width : 100% còn lại height sẽ auto như thế ảnh sẽ tràn vừa đủ div bao bên ngoài và 
+button bên dưới cũng display: block để vừa div và width = width của ảnh. đúng với design.
+
+
+
+task2:
+ảnh nên set width 100% để chiều rộng tràn hết div ngoài giống với design.
+phần middle nên để chia làm 3 cột giống với design
+
+task3:
+dùng float hoặc flex-box chia đều 3 cột cho 3 item
+img: không nên set width cứng, nên để 100% của từng cột
