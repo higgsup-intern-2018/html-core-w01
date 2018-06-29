@@ -1,0 +1,37 @@
+var num = 0;
+var anh = [
+"anh1.jpg",
+"anh2.jpeg",
+"cho.jpeg",
+"meo.jpg",
+"meo2.jpg",
+];
+var text = [
+"anh1",
+"anh2",
+"anh3",
+"anh4",
+"anh5",
+]
+document.getElementById('slide').src = anh[0];
+document.getElementById('text').innerText = text[0];
+function pre() {
+num--
+if(num<0){
+    document.getElementById('preb').style = "display: none";
+    num = 0;
+}
+document.getElementById('slide').src = anh[num];
+document.getElementById('text').innerText = text[num];
+document.getElementById('nextb').style = "display: block";
+}
+function next() {
+num++
+if(num>anh.length-1){
+    document.getElementById('nextb').style = "display: none";
+    num = anh.length-1;
+}
+document.getElementById('slide').src = anh[num];
+document.getElementById('text').innerText = text[num];
+document.getElementById('preb').style = "display: block";
+}
