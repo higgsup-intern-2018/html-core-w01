@@ -1,0 +1,70 @@
+@font-face {
+  font-family: font;
+  src: url("../Catamaran/Catamaran-SemiBold.ttf"); }
+
+@font-face {
+  font-family: font2;
+  src: url("../Catamaran/Catamaran-Bold.ttf"); }
+
+@font-face {
+  font-family: font3;
+  src: url("../Catamaran/Catamaran-Light.ttf"); }
+
+@font-face {
+  font-family: font4;
+  src: url("../Catamaran/Catamaran-Medium.ttf"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: font;
+  font-size: 14px; }
+
+body {
+  background: #000; }
+
+.container {
+  margin-top: 150px;
+  background: #fff; }
+  .container .child {
+    -o-object-fit: cover;
+    object-fit: cover;
+    border: 1px solid #fff;
+    padding: 16px 8px 0 8px; }
+    .container .child .img-zone {
+      height: 75%;
+      position: relative; }
+      .container .child .img-zone img {
+        width: 100%;
+        height: 100%; }
+      .container .child .img-zone .caption {
+        width: 100%;
+        height: 13%;
+        position: absolute;
+        bottom: 20px;
+        font-family: font2; }
+        .container .child .img-zone .caption .second-child {
+          display: inline;
+          position: absolute;
+          font-size: 18px;
+          color: #fff;
+          bottom: 0;
+          right: 10px;
+          margin-top: 6px;
+          font-family: font4; }
+        .container .child .img-zone .caption .first-child {
+          position: absolute;
+          bottom: 0;
+          left: 10px;
+          font-size: 20px;
+          display: inline;
+          color: #fff; }
+      .container .child .img-zone .heart {
+        position: absolute;
+        top: 15px;
+        right: 15px; }
+        .container .child .img-zone .heart i {
+          font-size: 35px;
+          color: #ECECEC; }
+    .container .child .text-zone {
+      padding: 10px; }
