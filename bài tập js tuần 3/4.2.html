@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="main">
+    <img src="images/1.jpg" id="image">
+    <div class="button"><button id="next" onclick="next()">next</button></div>
+    <div class="button"><button id="back" onclick="back()">back</button></div>
+</div>
+<script>
+    var array = ["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg"];
+    i = 0;
+    function next() {
+        i++;
+        document.getElementById('image').src = 'image/' + array[i];
+        if(i===array.length-1){
+            document.getElementById("back").style.display = "inline";
+            document.getElementById("next").style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
